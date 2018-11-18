@@ -21,6 +21,8 @@ def word_substituter(string)
   arr1.each do |word|
     if dic.keys.include?(word)
       x << dic[word]
+    else
+      x << word
     end 
   end 
   x.join("")
