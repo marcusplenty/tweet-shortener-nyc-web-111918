@@ -27,6 +27,4 @@ def word_substituter(string)
   end 
   y = x.join(" ")
   return y
-  
-  
 end
