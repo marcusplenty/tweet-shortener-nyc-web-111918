@@ -25,8 +25,8 @@ def word_substituter(string)
       x << word
     end 
   end 
-  x.join(" ")
-  return x
+  y = x.join(" ")
+  return y
   
   
 end
