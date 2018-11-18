@@ -52,7 +52,8 @@ def shortened_tweet_truncator(tweet)
     if y.length>140
       return y[0..139]
     else
-      return y  
+      return y
+    end
   else
     return tweet
   end
