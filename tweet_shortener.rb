@@ -29,8 +29,11 @@ def word_substituter(string)
   return y
 end
 
-def bulk_tweet_shortener
-  
+def bulk_tweet_shortener(array)
+  array.each do |tweet|
+    y = word_substituter(tweet)
+    puts y
+  end
 end
 
 def selective_tweet_shortener
