@@ -15,7 +15,16 @@ def dictionary
 end
 
 def word_substituter(string)
+  x = []
+  dic=dictionary
   arr1 = string.split(" ")
-  arr1.
+  arr1.each do |word|
+    if dic.keys.include?(word)
+      x << dic[word]
+    end 
+  end 
+  x.join("")
+  return x
+  
   
 end
