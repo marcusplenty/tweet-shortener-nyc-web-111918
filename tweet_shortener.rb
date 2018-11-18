@@ -19,8 +19,9 @@ def word_substituter(string)
   dic=dictionary
   arr1 = string.split(" ")
   arr1.each do |word|
-    if dic.keys.include?(word)
-      x << dic[word].down
+    small = word.downcase
+    if dic.keys.include?(small)
+      x << dic[small]
     else
       x << word
     end 
